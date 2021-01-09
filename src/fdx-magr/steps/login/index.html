@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="./styles.8986bff4.css" rel="stylesheet">
+    <title>MAGLogin</title>
+    <script src="./styles.8986bff4.js"></script>
+    <link href="./src.77de5100.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="card" id="form">
+        <h1 class="title">MAGLogin</h1>
+
+        <label for="environment">Environment</label>
+        <select id="environment" name="environment">
+        </select>
+
+        <label for="mocked">
+            <input id="mocked" type="checkbox"> Mocked
+        </label>
+
+        <label for="users">User list</label>
+        <select id="users" name="users"></select>
+
+        <hr>
+
+        <label for="userName">Username</label>
+        <input id="userName" name="userName" type="text" value="">
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" value="">
+
+        <hr>
+
+        <button id="submitButton">Login</button>
+        <button class="danger" id="logoutButton">Logout</button>
+
+        <div class="loading-spinner" hidden="">
+            <img alt="Loading" src="./spinner.63150e8a.svg">
+        </div>
+
+        <div hidden="" id="result"></div>
+
+        <input id="cookie" type="hidden">
+    </section>
+    <aside>
+        <h3>Available users <span id="selectedEnvironment"></span></h3>
+        <ul id="availableUsersList"></ul>
+    </aside>
+</main>
+
+
+<script src="./src.77de5100.js"></script>
+</body>
+</html>
